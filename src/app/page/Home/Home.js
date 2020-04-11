@@ -90,6 +90,11 @@ const HomePage = ({ history, ...rest }) => {
             <img src={HomeImage1} className={classes.HomeImage} alt="" />
           </Grid>
           <Grid container>
+            <Button className={classes.SigninButton} onClick={() => history.push("/donate")}>
+              Donate
+            </Button>
+          </Grid>
+          <Grid container>
             <Button className={classes.SigninButton} onClick={() => history.push("/login")}>
               Signin
             </Button>

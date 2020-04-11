@@ -15,6 +15,7 @@ import LoginPage from "./app/page/Login";
 import HomePage from "./app/page/Home";
 import AboutPage from "./app/page/Aboutus";
 import SignupPage from "./app/page/Signup";
+import Donate from "./app/page/Donate";
 import OrganizerSignupPage from "./app/page/OrganizerSignup";
 import Status from "./app/page/Status";
 
@@ -65,6 +66,10 @@ function App() {
                 <Route path="/organizer/signup" component={OrganizerSignupPage} />
                 <Route path="/signup" component={SignupPage} />
                 <Route path="/status" component={Status} />
+
+                <Route path="/donate">
+                  <Donate />{" "}
+                </Route>
 
                 <PrivateRoute path="/request/create">
                   <MakeRequest />
