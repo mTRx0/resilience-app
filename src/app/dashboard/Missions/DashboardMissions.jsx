@@ -9,7 +9,7 @@ import { useHistory } from "react-router";
 import { Button } from "../../component";
 import { Mission } from "../../model";
 import _ from "../../utils";
-import MissionDetails from "./MissionDetails";
+import MissionDetailsEdit from "./MissionDetailsEdit";
 import MissionsListView from "./MissionsListView";
 import MissionsMapView from "./MissionsMapView";
 
@@ -166,7 +166,7 @@ const DashboardMissions = ({ inDone, inPlanning, inProgress, inProposed }) => {
           )}
         </Grid>
       </Grid>
-      {selectedMission && <MissionDetails mission={selectedMission} />}
+      {selectedMission && <MissionDetailsEdit mission={selectedMission} />}
     </Grid>
   );
 };
